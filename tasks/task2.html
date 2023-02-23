@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const priceOfProduct = parseFloat(prompt("Введите цену товара:", 0));
+      const amountOfMoney = parseFloat(
+        prompt("Введите количество ваших денег:", 0)
+      );
+      const lotteryTicketPrice = 4;
+      let purchaseResult;
+
+      if (amountOfMoney < priceOfProduct)
+        purchaseResult = "Для покупки недостаточно денег.";
+      else if (amountOfMoney - priceOfProduct >= lotteryTicketPrice)
+        purchaseResult =
+          "Спасибо за покупку. Желаете приобрести лотерейный билет?";
+      else purchaseResult = "Спасибо за покупку";
+      document.write(purchaseResult);
+    </script>
+  </body>
+</html>

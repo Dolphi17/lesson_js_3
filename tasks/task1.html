@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+    const nameChild1 = prompt("Введите имя первого ребенка" )
+    const quantityCandyChild1 = parseFloat(prompt("Введите количество конфет у первого ребенка", 0))
+    const nameChild2 = prompt("Введите имя второго ребенка" )
+    const quantityCandyChild2 = parseFloat(prompt("Введите количество конфет у второго ребенка", 0))
+    
+    if(quantityCandyChild1>quantityCandyChild2) document.write(`У ${nameChild1} конфет больше`)
+    else if(quantityCandyChild1<quantityCandyChild2) document.write(`У ${nameChild2} конфет больше`)
+    else if(quantityCandyChild1===quantityCandyChild2) document.write("количество конфет одинаковое")
+    
+</script>
+</body>
+
+</html>

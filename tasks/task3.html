@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const minNumber = 1;
+        const maxNumber = 5;
+        const randomNumber = Math.floor(Math.random()*(maxNumber - minNumber + 1)) + minNumber
+        let quizResult
+
+        const guessedNumber1 = parseInt(prompt("Введите число от 1 до 5:", 0))
+        if (guessedNumber1 === randomNumber) quizResult = `Случайное число: ${randomNumber}; Введенное число: ${guessedNumber1}; Вы угадали с первой попытки`
+        else {
+            const guessedNumber2 = parseInt(prompt("Введите еще раз число от 1 до 5:"))
+            if (guessedNumber2 === randomNumber) quizResult = `Случайное число: ${randomNumber}; Первое Введенное число: ${guessedNumber1}; Второе введенное число: ${guessedNumber2}; Вы угадали со второй попытки`
+            else quizResult = `Случайное число: ${randomNumber} Первое введенное число: ${guessedNumber1} Второе введенное число: ${guessedNumber2} Вы не угадали число за две попытки`
+        }
+
+        document.write(quizResult)
+    
+    </script>
+</body>
+</html>

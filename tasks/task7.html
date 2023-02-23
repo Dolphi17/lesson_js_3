@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const monthOfYearNumber = parseInt(prompt("Введите номер месяца от 1 до 12", 0));
+      if (monthOfYearNumber < 1 || monthOfYearNumber > 12) document.write("Некорректное значение, обновите страницу и повторите процедуру ввода");
+      else if (monthOfYearNumber >= 3 && monthOfYearNumber < 6) document.write("Весна");
+      else if (monthOfYearNumber >= 6 && monthOfYearNumber < 9) document.write("Лето");
+      else if (monthOfYearNumber >= 9 && monthOfYearNumber < 12) document.write("Осень");
+      else document.write("Зима");
+    </script>
+  </body>
+</html>
